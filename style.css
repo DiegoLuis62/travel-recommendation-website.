@@ -21,7 +21,8 @@ body {
     gap: 5rem;
     justify-content: space-around;
     color: white;
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     background-color: rgba(240, 248, 255, 0.5);
     backdrop-filter: blur(10px);
     margin: 0.5rem;
@@ -36,6 +37,9 @@ body {
     gap: 2rem;
 
 
+}
+.logo > img {
+    filter: brightness(0) invert(1);
 }
 
 /* navigation part */
@@ -263,7 +267,9 @@ body {
 .team button {
     font-size: large;
     color: white;
-    width: 100%;
+    width: 80%;
+    border-radius: 3rem;
+    padding: 0.3rem;
     border: 2rem;
     border-color: azure;
     background: rgba(0, 128, 128, 1);
