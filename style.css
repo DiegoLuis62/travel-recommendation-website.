@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        /* capa oscura */
+        url("./img/Dubai4k.jpg");
+    background-size: cover;
+
+}
+
+.header {
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    color: white;
+    padding: 0.5rem;
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(10px);
+    margin: 0.5rem;
+    border-radius: 3rem;
+
+}
+
+/* logo part */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+
+}
+
+/* navigation part */
+.nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-underline-offset: 1rem;
+
+}
+
+.nav-link a:hover {
+    color: aqua;
+
+    text-decoration: underline 0.2rem;
+
+}
+
+/* Search box part */
+
+.search-box {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.search-box input {
+    border-radius: 1rem;
+    border: none;
+    width: 100%;
+    max-width: 40rem;
+    height: 2rem;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.search-box button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+
+
+}
+
+.search-box button:hover {
+    color: white;
+    background-color: rgb(0, 166, 255);
+
+}
+
+
+/* Body section */
+
+.container {
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+
+/* Sidebar a la izquierda */
+.sidebar {
+    margin: 1rem;
+    border-radius: 3rem;
+    width: 60px;
+    background-color: rgba(240, 248, 255, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sidebar .line {
+    width: 5px;
+    height: 50%;
+    background: white;
+    border-radius: 3rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li img {
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+/* Contenido principal */
+.content {
+    flex: 1;
+    /* ocupa el resto del espacio */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    /* separa del sidebar */
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.content p {
+    max-width: 500px;
+    margin: 20px 0;
+    font-size: 1.3rem;
+}
+
+.content button {
+    background: rgba(0, 128, 128, 0.7);
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+}
+
+.content button:hover {
+    background: rgba(0, 128, 128, 1);
+    text-decoration: underline 0.2rem;
+    text-underline-offset: 0.3rem;
+
+}
