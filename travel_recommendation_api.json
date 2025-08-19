@@ -1,5 +1,7 @@
 {
     "countries": [
+
+
       {
         "id": 1,
         "name": "Australia",
@@ -16,6 +18,12 @@
           }
         ]
       },
+
+
+
+
+
+
       {
         "id": 2,
         "name": "Japan",
@@ -32,6 +40,9 @@
           }
         ]
       },
+
+
+
       {
         "id": 3,
         "name": "Brazil",
@@ -48,8 +59,17 @@
           }
         ]
       }
+
+
+      
     ],
-    
+
+
+
+
+
+
+
     "temples": [
       {
         "id": 1,
@@ -64,6 +84,12 @@
         "description": "An iconic symbol of love and a masterpiece of Mughal architecture."
       }
     ],
+
+
+
+
+
+
     "beaches": [
       {
         "id": 1,
