@@ -228,20 +228,15 @@ body {
 
 }
 
-.content2 button:hover {
-    background: rgba(0, 128, 128, 1);
-    text-decoration: underline 0.2rem;
-    text-underline-offset: 0.3rem;
 
-}
 
 .team {
     padding-left: 6rem;
-    background-color: rgba(240, 248, 255, 0.4);
-    backdrop-filter: blur(5px);
     border-radius: 3rem;
     display: flex;
     gap: 1rem;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -249,7 +244,7 @@ body {
     height: 40px;
     width: 40px;
     border-radius: 2rem;
-    
+
 }
 
 .team div {
@@ -258,12 +253,18 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-        flex: 1;
+    flex: 1;
     background-color: rgba(240, 248, 255, 0.4);
     border-radius: 3rem;
+    aspect-ratio: 1/1;
+        backdrop-filter: blur(5px);
 }
 
-
-
-
-
+.team button {
+    font-size: large;
+    color: white;
+    width: 100%;
+    border: 2rem;
+    border-color: azure;
+    background: rgba(0, 128, 128, 1);
+}
