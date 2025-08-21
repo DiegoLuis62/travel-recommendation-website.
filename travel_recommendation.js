@@ -8,8 +8,8 @@ function Search() {
         .then(res => res.json())
         .then(data => {
             display.innerHTML = "";
-            const inputText = document.getElementById("text").value.trim().toLowerCase();;
-    
+            const inputText = document.getElementById("text").value.trim().toLowerCase();
+            let found = false;
             for (let category in data) {
                 //  category = countries , temples, beaches
 
@@ -32,7 +32,7 @@ function Search() {
                     //     ]
                     //   },
 
-                    if (inputText.includes("countries") && category === "countries") {
+                    if ("countries".includes(inputText) && category === "countries" && inputText !== "") {
 
 
                         locations.cities.forEach(cities => {
@@ -48,7 +48,7 @@ function Search() {
                             //             "description": "A cultural hub famous for its art, food, and diverse neighborhoods."
                             //           }
                             //         ]
-
+found = true;
                             display.innerHTML += ` <div class="card">
         <img src="img/${cities.imageUrl}" alt="">
         <div class="below">
@@ -63,8 +63,8 @@ function Search() {
 
 
 
-                    } else if (inputText.includes("temples") && category === "temples") {
-
+                    } else if ("temples".includes(inputText) && category === "temples" && inputText !== "") {
+found = true;
                         display.innerHTML += ` <div class="card">
         <img src="img/${locations.imageUrl}" alt="">
         <div class="below">
@@ -73,8 +73,8 @@ function Search() {
           <button>Visit</button>
         </div>
       </div>`;
-                    } else if (inputText.includes("beaches") && category === "beaches") {
-
+                    } else if ("beaches".includes(inputText) && category === "beaches" && inputText !== "") {
+found = true;
                         display.innerHTML += ` <div class="card">
         <img src="img/${locations.imageUrl}" alt="">
         <div class="below">
@@ -94,6 +94,11 @@ function Search() {
 
             }
 
+            if (found === false) {
+
+                alert("Not found it");
+                document.getElementById("text").value = "";
+            }
 
 
 
@@ -102,5 +107,11 @@ function Search() {
         .catch(error => console.log(error));
 }
 
+function clear(){
 
+  display.innerHTML = "";
+
+}
+
+btnClear.addEventListener("click",clear)
 btnSearch.addEventListener("click", Search);
